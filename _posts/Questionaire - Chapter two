@@ -1,0 +1,35 @@
+#Questionnaire
+
+Where do text models currently have a major deficiency?
+
+The major deficiency of the ML text models is to give an answer that have coherence and a proper 
+reasoning or logic of the topic being asked. This issue is dangerous since the model cannot make a
+proper analysis of what is being written and can propose a lie.
+
+What are possible negative societal implications of text generation models?
+
+Based on the response given to the previus answer, the ML can be used to spread lies and misinformation
+acrross many social medias. It can be a powerful tool to the people who want to tergiverse facts as the trolls 
+or 'bounty-hunters'
+
+In situations where a model might make mistakes, and those mistakes could be harmful, what is a good
+alternative to automating a process?
+
+ A methodolOgy that the book provides is the Drivetrain Approach, which handle an order to build an ML and 
+ resolve a problem.
+ The first step is to define the object that you are trying to solve- (Help the andean farmers to excel their process of cultivate)
+ Then you define the levers to use - Provide masked photos that can be translated into actions to be taken.
+ After this, you define the data to gather - photos of healthy and unheatlhy plantations of the particular crop
+ Fimally, you can then start to define how it is going to work your model
+
+What kind of tabular data is deep learning particularly good at?
+It is said in the book that in this particular field the deep learning is has not yielded further achievements.
+However, it is proven ,alongside with other methods, that de DL is helpful for analyze time series and
+tabular data.
+
+What's a key downside of directly using a deep learning model for recommendation systems?
+
+The most defining downside is that the ML models will recommend you things that are not helpful for you.
+For example, things that you already picked or know but that the system will recommend you because of the 
+proximity of probabilities.
+
