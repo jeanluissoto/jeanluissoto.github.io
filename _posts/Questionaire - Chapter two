@@ -33,3 +33,25 @@ The most defining downside is that the ML models will recommend you things that 
 For example, things that you already picked or know but that the system will recommend you because of the 
 proximity of probabilities.
 
+What is DataLoaders?
+
+It is a class that stores whatever you pass to it and makes them available as train and valid exercises.
+
+What Four things do we need to tell fastai to create DataLoaders?
+
+We need to define:
+1. the type or kind of data that is going to be worked on the model
+2. How to get the list of items
+3. How to label these items
+4. How to create the validation set
+
+
+What does the splitter parameter to DataBlock do?
+
+It allows to divide the data into the group that is going to be used as training and the other group to prove.
+
+How do we ensure a random split always gives the same validation set?
+
+We can ensure that the validation set keeps the same with the definition of the value seed, which defines the 'random' 
+order to define the split.
+
