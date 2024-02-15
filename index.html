@@ -56,11 +56,12 @@
 				}
 
         .modal-content {
-            background-color: #fefefe;
+            background-color: #f4e6e6;
 			padding: 20px;
 			border: 1px solid #888;
 			width: 80%;
-			max-width: 600px; /* Adjust as needed */
+			max-width: 800px; /* Adjust as needed */
+			overflow: auto;
         }
 
         .close {
@@ -160,7 +161,7 @@
 		`;
 		
 		// Display the modal
-		modal.style.display = "block";};
+		modal.style.display = "flex";};
     
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
