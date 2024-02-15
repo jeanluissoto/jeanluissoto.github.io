@@ -135,6 +135,18 @@
 	// Get the <span> element that closes the modal
 	const closeBtn = document.querySelector('.close');
 
+	// When the user clicks on the close button, close the modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+	function openModal(content) {
+        const modalContent = document.getElementById('modal-content');
+        // Set the content inside the modal
+        modalContent.innerHTML = content;
+        // Display the modal
+        modal.style.display = "block";
+    };
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
 
@@ -173,6 +185,7 @@
 
 				<!-- Project 3: NoSQL query exercises on flights Database -->
 				<div class="row">
+					<button onclick="openModal('This is some modal content')">Open Modal</button>
 					<article class="col-6 col-12-xsmall work-item">
 						<a href="https://github.com/jeanlsoto54/Latest-Works/blob/main/DataFundaNoSQL-Exercises.json" class="href-black">
 							<img src="images/thumbs/NoSQL.png" class="image fit thumb" alt="no-sql" />
