@@ -107,7 +107,7 @@
 				
 <div class="button-group">
     <button id="primaryButton" onclick="loadContent('Personal portfolio')">Primary</button>
-    <button onclick="loadContent('social')">Social</button>
+    <button onclick="loadContent('Travelling')">Social</button>
 </div>
 
 <div id="main-section">
@@ -140,7 +140,7 @@
         modal.style.display = "none";
     });
 
-	function openModal(content, additionalData) {
+	function openModal(content, additionalData, imageUrls) {
 
 		const modalContent = document.getElementById('modal-content');
     
@@ -157,10 +157,8 @@
 		`;
 		
 		// Display the modal
-		modal.style.display = "block";
+		modal.style.display = "block";};
     
-
-};
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
 
