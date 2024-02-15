@@ -140,12 +140,12 @@
         modal.style.display = "none";
     });
 
-	function openModal(content) {
-        const modalContent = document.getElementById('modal-content');
-        // Set the content inside the modal
-        modalContent.innerHTML = content;
-        // Display the modal
-        modal.style.display = "block";
+	function openModal(content, additionalData) {
+    const modalContent = document.getElementById('modal-content');
+    // Set the content inside the modal
+    modalContent.innerHTML = "<p>" + content + "</p><p>" + additionalData + "</p>";
+    // Display the modal
+    modal.style.display = "block";
     };
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
@@ -236,13 +236,16 @@
 			<section id="social">
                     <h2>Social</h2>
                     <!-- Social articles -->
-					<button onclick="openModal('This is some modal content')">Open Modal</button>
-                    <article id="article1">
-                        <h2 class="major">Article 1</h2>
-                        <span class="image main"><img src="images/thumbs/phone.png" alt="" /></span>
-                        <p>Article 1 content goes here...</p>
-                    </article>
-					<article id="article2">
+					<article id="article1">
+						<h2 class="major">Article 1</h2>
+						<!-- Wrap the image inside an anchor tag with onclick event -->
+						<a href="#" onclick="openModal('Article 1 content goes here...', 'Additional data goes here')">
+							<span class="image main"><img src="images/thumbs/phone.png" alt="" /></span>
+						</a>
+						<!-- Add any other content you want -->
+						<p>Article 1 content goes here...</p>
+					</article>					
+					<!-- article id="article2">
 						<h2 class="major">Article 2</h2>
 						<span class="image main"><img src="images/thumbs/phone.png" alt="" /></span>
 						<p>Article 2 content goes here...</p>
@@ -251,7 +254,7 @@
 						<h2 class="major">Article 3</h2>
 						<span class="image main"><img src="images/thumbs/phone.png" alt="" /></span>
 						<p>Article 3 content goes here...</p>
-					</article>
+					</article> -->
 										`
 			
 			;
