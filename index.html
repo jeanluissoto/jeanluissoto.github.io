@@ -141,12 +141,26 @@
     });
 
 	function openModal(content, additionalData) {
-    const modalContent = document.getElementById('modal-content');
-    // Set the content inside the modal
-    modalContent.innerHTML = "<p>" + content + "</p><p>" + additionalData + "</p>";
-    // Display the modal
-    modal.style.display = "block";
-    };
+
+		const modalContent = document.getElementById('modal-content');
+    
+		// Create HTML string for images
+		let imagesHTML = '';
+		imageUrls.forEach(url => {
+			imagesHTML += `<img src="${url}" class="image fit thumb" alt="" />`;
+		});
+	
+		// Set the content inside the modal
+		modalContent.innerHTML = `
+			<p>${content}</p>
+			${imagesHTML}
+		`;
+		
+		// Display the modal
+		modal.style.display = "block";
+    
+
+};
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
 
@@ -232,7 +246,7 @@
 						`;
         }
         // Add more conditions for other categories if needed
-        else if (category === 'social') {
+        else if (category === 'traveling') {
             contentElement.innerHTML = `
 			<section id="social">
                     <h2>Social</h2>
@@ -241,7 +255,7 @@
 						<h2 class="major">Article 1</h2>
 						<!-- Wrap the image inside an anchor tag with onclick event -->
 						<a href="#" onclick="openModal(
-							'Articl 1 content goes here...', 'Additional data goes here'
+							'Article content goes here...','More content to make', ['images/Berlin/IMG_20240204_112755_hdr.jpg', 'images/IMG_20240205_131442_hdr.jpg']
 							
 							
 							
