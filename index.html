@@ -59,11 +59,18 @@
             background-color: #f4e6e6;
 			padding: 20px;
 			border: 1px solid #888;
-			width: 80%;
-			max-width: 800px; /* Adjust as needed */
+			width: 70%;
+			max-width: 600px; /* Adjust as needed */
 			overflow: auto;
+			margin:auto;
         }
-
+		/* Adjusting images to fit within the modal */
+		.modal-content img {
+			max-width: 100%; /* Make images responsive */
+			height: auto; /* Maintain aspect ratio */
+			display: block; /* Display images as block to apply max-width */
+			margin: 0 auto; /* Center images within the modal */
+		}
         .close {
             color: #aaa;
             float: right;
