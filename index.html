@@ -187,7 +187,7 @@
         if (category === 'Artificial Intelligence') {
             contentElement.innerHTML = `
 			<section id="two">
-				<h2>Personal portfolio</h2>
+				<h2>Deep Learning|Natural Language Process|Visual Classification</h2>
 				<!-- Navigation for Projects -->
 				
 				<!-- Project 1: Delivery app orders prediction -->
@@ -260,9 +260,84 @@
         }
         // Add more conditions for other categories if needed
 
-		if  (category === 'Machine Learning') {contentElement.innerHTML =``;}
-		if  (category === 'Data Visualization') {contentElement.innerHTML =``;}
-        if  (category === 'Database Manipulation') {contentElement.innerHTML =``;}
+		if  (category === 'Machine Learning') {contentElement.innerHTML =`
+			<section id="ML">
+				<h2>Supervised | Unsupervised </h2>
+				<!-- Navigation for Projects -->
+
+					<div class="row">
+				
+						<!-- Project 1: Delivery app orders prediction -->
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://jeanlsoto54.github.io/ml_blog_3/posts/delivery/Delivery_app_group_project.html" class="href-black">
+								<img src="images/thumbs/ZytW4UfT-1657102185799-1200x900.jpg" class="image fit thumb" alt="prueba" />
+							</a>
+							<h3>Delivery app orders prediction</h3>
+							<p>An analysis about a business and try to recognize if there is any problem with the dispatchments that they orders.</p>
+						</article>
+
+						<!-- Project 4: Bike demand forecast on open data -->
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="https://github.com/jeanlsoto54/Latest-Works/blob/main/Smart_city%20-%20Paris%20bike%20demand.ipynb" class="href-black">
+								<img src="images/thumbs/forecast-paris.jpg" class="image fit thumb" alt="bike-forescast" />
+							</a>
+							<h3>Paris bike demand forecast</h3>
+							<p>Modeling a time series forecast for the Paris area with open data.</p>
+						</article>
+					
+					</div>
+					<div class="row">
+						<!-- Project 5: Applying QDA model on a price mobile prediction -->
+						<article class="col-6 col-12-xsmall work-item">
+						<a href="https://github.com/jeanlsoto54/Latest-Works/blob/main/Mobile.ipynb" class="href-black">
+							<img src="images/thumbs/phone.png" class="image fit thumb" alt="qda" />
+						</a>
+						<h3>mobile class classiffier with a QDA modeling </h3>
+						<p>In the next document is provided a process on how to create a model classiffication and understand
+							if the QDA model is a good model to fit into it.</p>
+						</article>
+					</div>	
+			</section>
+			`;}
+		if  (category === 'Data Visualization') {contentElement.innerHTML =`
+			
+			<section id="Dataviz">
+				<h2> Power BI | Tableau | R </h2>
+				<!-- Navigation for Projects -->
+				<div class="row">
+				</div>	
+			</section>
+			
+			`;}
+        if  (category === 'Database Manipulation') {contentElement.innerHTML =`
+			
+			<section id="Dataviz">
+				<h2> SQL | No-SQL | Big Data </h2>
+				<!-- Navigation for Projects -->
+
+					<!-- Project 2: SQL query exercise on Chinook Database -->
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://jeanlsoto54.github.io/blog_1/2023/12/17/SQL_project.html" class="href-black">
+							<img src="images/thumbs/SQL.png" class="image fit thumb" alt="sql" />
+						</a>
+						<h3>SQL query exercise on Chinook Database</h3>
+						<p>Exercise to catch score ratings on a movie database by sql script.</p>
+					</article>
+
+					<!-- Project 3: NoSQL query exercises on flights Database -->
+					<article class="col-6 col-12-xsmall work-item">
+						<a href="https://github.com/jeanlsoto54/Latest-Works/blob/main/DataFundaNoSQL-Exercises.json" class="href-black">
+							<img src="images/thumbs/NoSQL.png" class="image fit thumb" alt="no-sql" />
+						</a>
+						<h3>NoSQL query exercises on flights Database</h3>
+						<p>Exercises and queries on Kibana & Elastic Search related to the airport traffic around the world.</p>
+					</article>
+				<div class="row">
+
+				</div>	
+			</section>
+			
+			`;}
 		else if (category === 'Travelling') {
             contentElement.innerHTML = 
 			`
