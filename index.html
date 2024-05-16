@@ -60,7 +60,7 @@
 			height: 100%;
 			overflow: auto;
 			background-color: rgba(0, 0, 0, 0.5);
-			display: flex;
+			/*display: flex;*/
 			align-items: center;
 			justify-content: center;
 				}
@@ -168,12 +168,13 @@
 	function openModal(content, additionalData, imageUrls) {
 
 		const modalContent = document.getElementById('modal-content');
-    
-		// Create HTML string for images
-		let imagesHTML = '';
-		imageUrls.forEach(url => {
-			imagesHTML += `<img src="${url}" class="image fit thumb" alt="" />`;
-		});
+		
+		if (modalContent && imageUrls && Array.isArray(imageUrls)) {
+			// Create HTML string for images
+			let imagesHTML = '';
+			imageUrls.forEach((url) => {
+			  imagesHTML += `<img src="${url}" class="image fit thumb" alt="" />`;
+			});
 	
 		// Set the content inside the modal
 		modalContent.innerHTML = `
@@ -182,7 +183,9 @@
 		`;
 		
 		// Display the modal
-		modal.style.display = "flex";};
+		modal.style.display = "flex";
+		}
+	};
     
 	// Get the div that will contain modal content
 	const modalContent = document.getElementById('modal-content');
