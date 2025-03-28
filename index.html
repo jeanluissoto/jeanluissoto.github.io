@@ -17,6 +17,17 @@
 
 		gtag('config', 'G-MN5LPJ67C0');
 		</script>
+
+		 <!-- Amplitude Analytics -->
+		 <script src="https://cdn.eu.amplitude.com/script/920b8a08625dcf80558284294182ca5f.js"></script>
+		 <script>
+			 window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+			 window.amplitude.init('920b8a08625dcf80558284294182ca5f', {
+				 "fetchRemoteConfig":true,
+				 "serverZone":"EU",
+				 "autocapture":true
+			 });
+		 </script>
 		
 		<title>Strata by HTML5 UP</title>
 		<meta charset="utf-8" />
